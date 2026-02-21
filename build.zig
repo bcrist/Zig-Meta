@@ -1,5 +1,3 @@
-const std = @import("std");
-
 pub fn build(b: *std.Build) void {
     const mod = b.addModule("meta", .{
         .root_source_file = b.path("meta.zig"),
@@ -17,3 +15,5 @@ pub fn build(b: *std.Build) void {
     });
     b.step("test", "run all tests").dependOn(&b.addRunArtifact(tests).step);
 }
+
+const std = @import("std");
