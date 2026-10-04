@@ -1,3 +1,4 @@
+/// Deprecated: use std.meta.BackingInt instead.
 pub fn Backing(comptime T: type) type {
     return switch (@typeInfo(T)) {
         .@"enum" => |info| info.tag_type,
