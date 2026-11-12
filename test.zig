@@ -7,7 +7,7 @@ test "meta.Backing" {
         C: u8,
         D: u16,
     };
-    const S = packed struct(u16) {
+    const S = bitpack struct(u16) {
         x: u7,
         y: u9,
     };

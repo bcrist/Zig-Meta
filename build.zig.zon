@@ -1,7 +1,7 @@
 .{
     .name = .meta,
     .fingerprint = 0xd7f2143589283a67,
-    .version = "0.0.1",
-    .minimum_zig_version = "0.16.0",
+    .version = "0.0.2",
+    .minimum_zig_version = "0.18.0-dev.1125+115db0db5",
     .paths = .{""},
 }
